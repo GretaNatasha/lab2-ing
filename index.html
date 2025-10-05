@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fases Esenciales en Proyectos de Software (SDLC)</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Ciclo de Vida del Desarrollo de Software (SDLC)</h1>
+            <h3>Fases Esenciales en Proyectos de Software</h3>
+            <h2>Laboratorio N°2</h2>
+        </div>
+    </header>
+
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <a href="#inicio">Inicio</a>
+            <a href="#requerimientos">Requerimientos</a>
+            <a href="#diseno">Diseño</a>
+            <a href="#desarrollo">Desarrollo</a>
+            <a href="#pruebas">Pruebas y QA</a>
+            <a href="#despliegue">Despliegue</a>
+            <a href="#mantenimiento">Mantenimiento</a>
+        </div>
+    </nav>
+
+    <main class="content-container">
+        
+        <section id="inicio" class="phase-block primary-bg">
+             <img src="proyectosoft.png" alt="Diagrama del Ciclo de Vida del Software" class="main-image">
+
+            <h2 class="phase-title">Guía del Personal y Responsabilidades Clave</h2>
+            <p>El Ciclo de Vida del Desarrollo de Software (SDLC) es un marco que define las tareas realizadas en cada paso del proceso de desarrollo. Esta guía detalla las actividades, los objetivos y los resultados esperados en cada fase esencial del proyecto.</p>
+        </section>
+
+        <section id="requerimientos" class="phase-block">
+            <h2 class="phase-title">1 & 2. Obtención y Análisis de Requerimientos</h2>
+            <div class="visual-icon">📝</div>
+            <p><strong>Objetivo:</strong> Entender, documentar, refinar y validar lo que el cliente o usuario necesita que haga el software, asegurando que es consistente y factible.</p>
+            <h3>Actividades Clave:</h3>
+            <ul>
+                <li><strong>Obtención:</strong> Entrevistas, cuestionarios, talleres (JAD) y observación.</li>
+                <li><strong>Análisis:</strong> Modelado de datos y procesos (diagramas UML, diagramas de flujo), priorización y resolución de conflictos.</li>
+            </ul>
+            <p class="result"><strong>Resultado:</strong> Documento de Especificación de Requerimientos de Software (ERS/SRS).</p>
+        </section>
+
+        <section id="diseno" class="phase-block primary-bg">
+            <h2 class="phase-title">3. Diseño del Software</h2>
+            <div class="visual-icon">📐</div>
+            <p><strong>Objetivo:</strong> Crear un "plano" para la construcción del sistema, definiendo la arquitectura, la interfaz de usuario y los módulos internos.</p>
+            <h3>Actividades Clave:</h3>
+            <ul>
+                <li>Diseño de la <strong>arquitectura</strong> (capas, componentes).</li>
+                <li>Diseño de la <strong>base de datos</strong>.</li>
+                <li>Diseño de la <strong>Interfaz de Usuario</strong> (UI/UX) y prototipos.</li>
+            </ul>
+            <p class="result"><strong>Resultado:</strong> Documento de Diseño del Software (DDS) y prototipos de interfaz.</p>
+        </section>
+
+        <section id="desarrollo" class="phase-block">
+            <h2 class="phase-title">4. Desarrollo del Software</h2>
+            <div class="visual-icon">💻</div>
+            <p><strong>Objetivo:</strong> Escribir el código fuente del sistema según las especificaciones detalladas en la fase de diseño.</p>
+            <h3>Actividades Clave:</h3>
+            <ul>
+                <li>Programación de módulos, uso de estándares de codificación.</li>
+                <li>Integración continua y *builds* iniciales.</li>
+            </ul>
+
+            <div class="phase-video-embed">
+                <iframe src="https://www.youtube.com/embed/TLVDBAo1aEY?si=YE_W4-TeNVDcbYs0" 
+                        title="Video sobre Desarrollo de Software" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+            <p class="result"><strong>Resultado:</strong> Código funcional y módulos de software listos para la fase de prueba.</p>
+        </section>
+
+        <section id="pruebas" class="phase-block primary-bg">
+            <h2 class="phase-title">5. Pruebas y Aseguramiento de la Calidad (QA)</h2>
+            <div class="visual-icon">🐞</div>
+            <p><strong>Objetivo:</strong> Verificar que el software cumple con los requerimientos y no contiene errores (bugs).</p>
+            <h3>Tipos de Pruebas Clave:</h3>
+            <ul>
+                <li><strong>Pruebas unitarias:</strong> Módulos individuales.</li>
+                <li><strong>Pruebas de integración:</strong> Cómo trabajan los módulos juntos.</li>
+                <li><strong>Pruebas de aceptación (UAT):</strong> El cliente valida que cumple sus expectativas.</li>
+            </ul>
+            <p class="result"><strong>Resultado:</strong> Software validado y un informe de calidad.</p>
+        </section>
+
+        <section id="despliegue" class="phase-block">
+            <h2 class="phase-title">6. Despliegue o Puesta en Marcha</h2>
+            <div class="visual-icon">🚀</div>
+            <p><strong>Objetivo:</strong> Instalar y configurar el software en el entorno de producción para que los usuarios finales puedan comenzar a utilizarlo.</p>
+            <h3>Actividades Clave:</h3>
+            <ul>
+                <li>Instalación de servidores y bases de datos.</li>
+                <li>Migración de datos.</li>
+                <li>Formación a usuarios y monitoreo inicial.</li>
+            </ul>
+            <p class="result"><strong>Resultado:</strong> El sistema está operativo para el uso diario.</p>
+        </section>
+
+        <section id="mantenimiento" class="phase-block primary-bg">
+            <h2 class="phase-title">7. Mantenimiento de Software</h2>
+            <div class="visual-icon">🛠️</div>
+            <p><strong>Objetivo:</strong> Modificar el sistema después de su despliegue para corregir, mejorar o adaptar el producto a cambios futuros.</p>
+            
+            <div class="maintenance-cards-container">
+                <article class="maintenance-card">
+                    <h3>7.1. Mantenimiento Correctivo 🚨</h3>
+                    <p><strong>Enfoque:</strong> Solucionar errores (*bugs* o fallas) que se descubren una vez que el sistema ya está en uso.</p>
+                </article>
+                
+                <article class="maintenance-card">
+                    <h3>7.2. Mantenimiento Preventivo 🧼</h3>
+                    <p><strong>Enfoque:</strong> Realizar cambios o refactorizaciones para mejorar la calidad interna del código, buscando reducir la posibilidad de futuras fallas.</p>
+                </article>
+
+                <article class="maintenance-card">
+                    <h3>7.3. Mantenimiento Adaptativo ☁️</h3>
+                    <p><strong>Enfoque:</strong> Ajustar el software a cambios en el entorno externo, como nuevas versiones de sistemas operativos, navegadores o regulaciones legales.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy;  Ingeniería de Software | Greta Romero </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
